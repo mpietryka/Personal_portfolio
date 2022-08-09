@@ -6,9 +6,9 @@ export const Bio = ({bio}) => {
     <div className='m-16 p-4 md:p-16 w-4/5 mx-auto shadow-lg border border-gray-50'>
         <div className='grid lg:grid-cols-2'>
             <div className='flex justify-center mb-4'>
-                <img src={profilePic} alt="logo" className='rounded-full hover:scale-105 transition duration-300 ease-in-out'/>
+                <img src={profilePic} alt="logo" className='md:max-h-72 rounded-full hover:scale-105 transition duration-300 ease-in-out my-auto'/>
             </div>
-            <div className='max-w-sm md:max-w-lg md:mx-16'>
+            <div className='max-w-sm md:max-w-lg md:mx-16 mx-auto'>
                 <h1 className='text-xl md:text-3xl text-left font-semibold'>About me:</h1>
                 <p className='text-justify text-sm md:text-md font-light pt-2'>My name is Mateusz Pietryka, I am 29 years old and I am a soon to be a 3rd year Computer 
                 Science Student. I am very interested in Front-end Design and Development. 
