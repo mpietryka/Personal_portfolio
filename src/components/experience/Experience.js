@@ -3,7 +3,7 @@ import React from 'react'
 export const Experience = ({experience}) => {
     return (  
         <div className='m-16 p-4 md:p-16 w-4/5 mx-auto shadow-lg border border-gray-50'>
-        <h1 className='text-2xl md:text-3xl text-center font-semibold mb-4 md:mb-16'>Relevant Experience:</h1>
+        <h1 className='text-2xl md:text-3xl text-center font-semibold mb-4 md:mb-16'>Relevant Experience</h1>
         <div className='flex justify-center'>
             <ul>
                 <li>
