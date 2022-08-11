@@ -1,21 +1,16 @@
-import './App.css';
-import { Header } from './components';
-import { Bio } from './components';
-import { Tech } from './components';
-import { Education } from './components';
-import { Experience } from './components';
-import { Footer } from './components';
+import { Header, Bio, Tech, Education, Experience, Footer } from "./containers";
 
-function App() {
-    return ( <div> 
-    <Header/>
-    <Bio/>
-    <Tech/>
-    <Education/>
-    <Experience/>
-    <Footer/>
-        </div>
-    );
-}
+const App = () => {
+  return (
+    <>
+      <Header />
+      <Bio />
+      <Tech />
+      <Education />
+      <Experience />
+      <Footer />
+    </>
+  );
+};
 
 export default App;

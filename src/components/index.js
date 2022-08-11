@@ -1,6 +1,8 @@
-export { Header } from './header/Header'
-export { Bio } from './bio/Bio'
-export { Tech } from './technology/Tech'
-export { Education } from './education/Education'
-export { Experience } from './experience/Experience'
-export { Footer } from './footer/Footer'
+export { Paragraph } from "./paragraph/Paragraph";
+export { MainContainer } from "./mainContainer/MainContainer";
+export { Centered } from "./centered/Centered";
+export { Bubble } from "./bubble/Bubble";
+export { Heading } from "./heading/Heading";
+export { Heading2 } from "./heading2/Heading2";
+export { Description } from "./description/Description";
+export { Title } from "./title/Title";
