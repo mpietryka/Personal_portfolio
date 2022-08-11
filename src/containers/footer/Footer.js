@@ -1,25 +1,20 @@
 import React from "react";
 import linkedin from "./linkedin.png";
 import github from "./github.png";
-import { Centered } from "../../components";
+import { Centered, Signature, Socials } from "../../components";
 
 export const Footer = () => {
   return (
-    <div>
+    <>
       <Centered>
-        <a
-          href="https://www.linkedin.com/in/mateusz-pietryka-4a7288239"
-          className="mx-12"
-        >
+        <Socials href="https://www.linkedin.com/in/mateusz-pietryka-4a7288239">
           <img src={linkedin} alt="linkedin" />
-        </a>
-        <a href="https://github.com/mpietryka" className="mx-12">
+        </Socials>
+        <Socials href="https://github.com/mpietryka">
           <img src={github} alt="logo" />
-        </a>
+        </Socials>
       </Centered>
-      <div className="text-xs md:text-sm md:font-bold text-right p-4">
-        Created by Mateusz Pietryka
-      </div>
-    </div>
+      <Signature>Created by Mateusz Pietryka</Signature>
+    </>
   );
 };
