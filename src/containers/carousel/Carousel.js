@@ -1,11 +1,5 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
 import "swiper/css";
-import "swiper/css/navigation";
-
-// import required modules
-import { Navigation } from "swiper";
 import { MainContainer } from "../../components";
 
 export const Carousel = () => {
@@ -14,7 +8,7 @@ export const Carousel = () => {
       <MainContainer>
         <Swiper className="mySwiper">
           <SwiperSlide>
-              <p className="m-16 text-center">Slide 1</p>
+            <p className="m-16 text-center">Slide 1</p>
           </SwiperSlide>
           <SwiperSlide>
             <p className="m-16 text-center">Slide 2</p>
