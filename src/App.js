@@ -1,4 +1,12 @@
-import { Header, Bio, Tech, Education, Experience, Footer } from "./containers";
+import {
+  Header,
+  Bio,
+  Tech,
+  Education,
+  Experience,
+  Footer,
+  Carousel,
+} from "./containers";
 
 const App = () => {
   return (
@@ -8,6 +16,7 @@ const App = () => {
       <Tech />
       <Education />
       <Experience />
+      <Carousel />
       <Footer />
     </>
   );
