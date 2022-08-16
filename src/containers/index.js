@@ -5,3 +5,4 @@ export { Education } from "./education/Education";
 export { Experience } from "./experience/Experience";
 export { Footer } from "./footer/Footer";
 export { Carousel } from "./carousel/Carousel";
+export { Repos } from "./repos/Repos"

@@ -12,3 +12,4 @@ export { BioText } from "./bioText/BioText";
 export { Grid2Cols } from "./grid2cols/Grid2Cols";
 export { Grid3Cols } from "./grid3cols/Grid3Cols";
 export { Signature } from "./signature/Signature";
+export { Link } from "./link/Link";
