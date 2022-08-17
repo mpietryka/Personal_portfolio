@@ -29,7 +29,7 @@ export const Carousel = (props) => {
     <Swiper
       style={{
         "--swiper-navigation-color": "#000",
-        "--swiper-navigation-size": "25px",
+        "--swiper-navigation-size": "20px",
       }}
       navigation={true}
       modules={[Navigation]}
