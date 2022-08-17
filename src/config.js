@@ -8,10 +8,10 @@ const info = {
 };
 
 const jobs = {
-  job1: "Clipics - Front-end Develope",
-  jobDate1: " (June 2020 - Present) - ",
+  job1: "Clipics - Front-end Developer",
+  jobDate1: " (June 2022 - September 2022) - ",
   jobDescription1:
-    "I was in charge of designing and developing a modern, responsive user interface for Clipics webapp. I have achieved that using Tailwind CSS and Tailwind Elements. Working on this project taught me how to develop the sites that translate well between different screen sizes and the importance of it.",
+    "I have designed and developed a modern, responsive User Interface for Clipics webapp. I have achieved that using Tailwind CSS and Tailwind Elements. Working on this project taught me how to develop the sites that translate well between different screen sizes and the importance of it.",
 };
 
 const edu = {
