@@ -1,5 +1,5 @@
 import { MainContainer, Heading } from "../../components";
-import { Carousel } from "../Carousel/Carousel";
+import { Carousel } from "../carousel/Carousel";
 import axios from "axios";
 import { useState, useEffect } from "react";
 
