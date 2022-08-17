@@ -1,38 +1,43 @@
-import { MainContainer, Heading } from "../../components";
-import { Repos } from "../repos/Repos"
-import axios from "axios";
-import { useState, useEffect } from "react";
+import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css/navigation";
+import "swiper/css";
+import { Navigation } from "swiper";
+import { Centered, Heading2, Link, Paragraph } from "../../components";
 
-export const Carousel = () => {
-  const [repos, setRepos] = useState([]);
+export const Carousel = (props) => {
+  const { repos } = props;
 
-  useEffect(() => {
-    // set a clean up flag
-    let isSubscribed = true;
-
-    const tryToFetchRepos = async () => {
-      try {
-        const result = await axios (`https://api.github.com/users/mpietryka/repos`)
-        setRepos(result)
-      }catch(err){
-        console.log(err);
-      }
-    };
-
-    tryToFetchRepos();
-
-    return () => {
-      isSubscribed = false;
-    };
-  }, []);
+  const listRepos =
+    repos.length !== 0 ? (
+      repos.data.map((item) => (
+        <SwiperSlide key={item.id}>
+          <Centered>
+            <div className="w-3/4">
+              <Heading2>{item.name}</Heading2>
+              <Paragraph>{item.description}</Paragraph>
+              <Link href={item.html_url}>Learn more</Link>
+            </div>
+          </Centered>
+        </SwiperSlide>
+      ))
+    ) : (
+      <p></p>
+    );
 
   return (
-  <>
-
-    <MainContainer>
-      <Heading>Github Repositories</Heading>
-      {!repos ? 'Loading...' : <Repos repos={repos}/>}
-    </MainContainer>
-    </>
+    <Swiper
+      style={{
+        "--swiper-navigation-color": "#000",
+        "--swiper-navigation-size": "25px",
+      }}
+      navigation={true}
+      modules={[Navigation]}
+      slidesPerView={1}
+      spaceBetween={30}
+      className="mySwiper"
+    >
+      {listRepos}
+    </Swiper>
   );
-};
+}

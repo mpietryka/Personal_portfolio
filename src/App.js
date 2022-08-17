@@ -5,7 +5,7 @@ import {
   Education,
   Experience,
   Footer,
-  Carousel,
+  Repositories,
 } from "./containers";
 
 const App = () => {
@@ -16,7 +16,7 @@ const App = () => {
       <Tech />
       <Education />
       <Experience />
-      <Carousel />
+      <Repositories />
       <Footer />
     </>
   );
