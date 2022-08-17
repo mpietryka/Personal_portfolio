@@ -6,15 +6,6 @@ import { useState, useEffect } from "react";
 export const Carousel = () => {
   const [repos, setRepos] = useState([]);
 
-  // const handleClick = async () => {
-  //   try {
-  //     const result = await axios (`https://api.github.com/users/mpietryka/repos`)
-  //     setRepos(result)
-  //   }catch(err){
-  //     console.log(err);
-  //   }
-  // }
-
   useEffect(() => {
     // set a clean up flag
     let isSubscribed = true;
@@ -37,14 +28,10 @@ export const Carousel = () => {
 
   return (
   <>
-    {/* <MainContainer>
-       <button onClick={handleClick}>Show Repositories</button>
-    </MainContainer> */}
-    
+
     <MainContainer>
       <Heading>Github Repositories</Heading>
       {!repos ? 'Loading...' : <Repos repos={repos}/>}
-      
     </MainContainer>
     </>
   );
