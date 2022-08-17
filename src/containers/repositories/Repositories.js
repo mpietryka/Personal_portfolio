@@ -7,6 +7,7 @@ export const Repositories = () => {
   const [repos, setRepos] = useState([]);
 
   useEffect(() => {
+    // eslint-disable-next-line no-unused-vars
     let isSubscribed = true;
 
     const fetchRepos = async () => {
