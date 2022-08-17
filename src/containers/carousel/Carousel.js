@@ -40,4 +40,4 @@ export const Carousel = (props) => {
       {listRepos}
     </Swiper>
   );
-}
+};
