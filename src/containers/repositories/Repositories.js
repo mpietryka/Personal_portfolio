@@ -5,7 +5,9 @@ import { useState, useEffect } from "react";
 
 export const Repositories = () => {
   const [repos, setRepos] = useState([]);
+  const [error, setError] = useState(false);
 
+ 
   useEffect(() => {
     // eslint-disable-next-line no-unused-vars
     let isSubscribed = true;
@@ -16,8 +18,10 @@ export const Repositories = () => {
           `https://api.github.com/users/mpietryka/repos`
         );
         setRepos(result);
-      } catch (err) {
-        console.log(err);
+        setError(false);
+      } catch (error) {
+        setError(true);
+        //console.log(error);
       }
     };
 
@@ -32,6 +36,7 @@ export const Repositories = () => {
     <>
       <MainContainer>
         <Heading>Github Repositories</Heading>
+        
         {!repos ? "Loading..." : <Carousel repos={repos} />}
       </MainContainer>
     </>
