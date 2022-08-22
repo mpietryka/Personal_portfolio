@@ -9,10 +9,8 @@ import {
   Repositories,
 } from "./containers";
 
-
-
 const App = () => {
-const [ toDo, setToDo ] = React.useState([])
+//const [ toDo, setToDo ] = React.useState([])
 
 /* React.useEffect(() => {
   const fetchData = async() => {
@@ -34,7 +32,7 @@ const [ toDo, setToDo ] = React.useState([])
    */
   
   return (
-    <>
+    <div className='bg-green-50'>
       <Header />
       <Bio />
       <Tech />
@@ -42,7 +40,7 @@ const [ toDo, setToDo ] = React.useState([])
       <Experience />
       <Repositories />
       <Footer />
-    </>
+    </div>
 
     
   );
