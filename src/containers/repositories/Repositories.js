@@ -21,7 +21,7 @@ export const Repositories = () => {
         setError(false);
       } catch (error) {
         setError(true);
-        //console.log(error);
+        console.log(error);
       }
     };
 
