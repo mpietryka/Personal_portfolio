@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
 
 export const Repositories = () => {
   const [repos, setRepos] = useState([]);
-  const [error, setError] = useState(false);
+  //const [error, setError] = useState(false);
 
  
   useEffect(() => {
@@ -18,9 +18,9 @@ export const Repositories = () => {
           `https://api.github.com/users/mpietryka/repos`
         );
         setRepos(result);
-        setError(false);
+        //setError(false);
       } catch (error) {
-        setError(true);
+        //setError(true);
         console.log(error);
       }
     };
