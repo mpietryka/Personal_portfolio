@@ -32,7 +32,7 @@ const App = () => {
    */
   
   return (
-    <div className='bg-green-50'>
+    <div className='bg-slate-50'>
       <Header />
       <Bio />
       <Tech />
