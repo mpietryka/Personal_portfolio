@@ -8,11 +8,14 @@ const info = {
 };
 
 const jobs = {
-  job1: "Clipics - Front-end Developer",
+  job1: "Clipics - Frontend Developer",
   jobDate1: " (June 2022 - September 2022) - ",
   jobDescription1:
     "I have designed and developed a modern, responsive User Interface for Clipics webapp. I have achieved that using Tailwind CSS and Tailwind Elements. Working on this project taught me how to develop the sites that translate well between different screen sizes and the importance of it.",
-};
+  job2: "Better Safer Communities - Frontend Developer (Work Placement)",
+  jobDate2: " (August 2022 - October 2022) - ",
+  jobDescription2: "During 10 weeks of my placement I have learn a lot about modern Web Development techniques. I have worked on a group project using ReactJS, TailwindCSS, Redux Toolkit and Firebase as a Cloud Backend service. I have learned about Synchronous and Asynchronous API calls and how to efficiently communicate with the backend using JavaScript. Working under the supervision of a skilled developer drastically accelerated my learning."
+  };
 
 const edu = {
   edu1: "London Metropolitan University BSc (Hons) Computer Science ",

@@ -7,7 +7,7 @@ import {
   Description,
   Centered,
 } from "../../components";
-const { job1, jobDescription1, jobDate1 } = jobs;
+const { job1, jobDescription1, jobDate1, job2, jobDate2, jobDescription2} = jobs;
 
 export const Experience = () => {
   return (
@@ -15,10 +15,15 @@ export const Experience = () => {
       <Heading>Relevant Experience</Heading>
       <Centered>
         <ul>
-          <li>
+          <li className="pb-4">
             <Heading2>{job1}</Heading2>
             <Description>{jobDate1}</Description>
             <Description>{jobDescription1}</Description>
+          </li>
+          <li>
+            <Heading2>{job2}</Heading2>
+            <Description>{jobDate2}</Description>
+            <Description>{jobDescription2}</Description>
           </li>
         </ul>
       </Centered>
