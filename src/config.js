@@ -9,17 +9,18 @@ const info = {
 
 const jobs = {
   job1: "Clipics - Frontend Developer",
-  jobDate1: " (June 2022 - September 2022) - ",
+  jobDate1: " (June 2022 - August 2022)",
+  jobDescription: "",
   jobDescription1:
-    "I have designed and developed a modern, responsive User Interface for Clipics webapp. I have achieved that using Tailwind CSS and Tailwind Elements. Working on this project taught me how to develop the sites that translate well between different screen sizes and the importance of it.",
-  job2: "Better Safer Communities - Frontend Developer (Work Placement)",
-  jobDate2: " (August 2022 - October 2022) - ",
-  jobDescription2: "During 10 weeks of my placement I have learn a lot about modern Web Development techniques. I have worked on a group project using ReactJS, TailwindCSS, Redux Toolkit and Firebase as a Cloud Backend service. I have learned about Synchronous and Asynchronous API calls and how to efficiently communicate with the backend using JavaScript. Working under the supervision of a skilled developer drastically accelerated my learning."
-  };
+    "I have designed and developed a modern, responsive User Interface for Clipics webapp using Tailwind CSS and Tailwind Elements. I have helped conceptualise the owner’s vision through a series of prototypes that led to the final design that fit the client’s requirements and expectations. Working on this project taught me how to develop the websites that translate well between different screen sizes and the importance of it.",
+  job2: "Better Safer Communities - Full Stack Engineer (Work Placement)",
+  jobDate2: " (August 2022 - October 2022)",
+  jobDescription2: "During 10 weeks of my placement I have learn a lot about modern Web Development techniques. I have developed a login, registration, and chat system that allows users to create and manage their account and send each other messages, attachments and voice notes. This placement allowed me to demonstrate my ability to adapt to new technologies and ever-changing requirements. Working under the supervision of a skilled developer drastically accelerated my learning."
+};
 
 const edu = {
-  edu1: "London Metropolitan University BSc (Hons) Computer Science ",
-  eduDate1: "(2020 - Present)",
+  edu1: "London Metropolitan University BSc (Hons) Computer Science (predicted grade: first-class honours)",
+  eduDate1: "(2020 - Present) expected June 2023",
 };
 
 export { info };

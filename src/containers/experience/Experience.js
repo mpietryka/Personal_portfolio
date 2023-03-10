@@ -17,12 +17,12 @@ export const Experience = () => {
         <ul>
           <li className="pb-4">
             <Heading2>{job1}</Heading2>
-            <Description>{jobDate1}</Description>
+            <small>{jobDate1}</small>
             <Description>{jobDescription1}</Description>
           </li>
           <li>
             <Heading2>{job2}</Heading2>
-            <Description>{jobDate2}</Description>
+            <span className="text-xs">{jobDate2}</span>
             <Description>{jobDescription2}</Description>
           </li>
         </ul>

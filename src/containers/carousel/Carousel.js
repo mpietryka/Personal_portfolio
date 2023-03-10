@@ -13,9 +13,13 @@ export const Carousel = (props) => {
       repos.data.map((item) => (
         <SwiperSlide key={item.id}>
           <Centered>
-            <div className="w-3/4">
+            <div className="w-5/6">
               <Heading2>{item.name}</Heading2>
               <Paragraph>{item.description}</Paragraph>
+              <p className="my-1"><small>Tech Stack: </small></p>
+              <div className="w-full flex-wrap flex-row flex">{item.topics.map((topic) => {
+                return <span className="text-xs bg-gray-300 rounded-full px-2 py-1 text-gray-700 mr-1 md:mr-3 my-2">{topic}</span>
+              })}</div>
               <Link href={item.html_url}>Learn more</Link>
             </div>
           </Centered>

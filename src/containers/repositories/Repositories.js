@@ -18,6 +18,7 @@ export const Repositories = () => {
           `https://api.github.com/users/mpietryka/repos`
         );
         setRepos(result);
+        console.log(result)
         //setError(false);
       } catch (error) {
         //setError(true);
